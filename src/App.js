@@ -28,7 +28,7 @@ function App() {
     e.preventDefault()
     setSearchTerm(term)
   }
-
+  console.log(data, searchTerm)
   return (
     <div className="App">
       <SearchBar handleSearch={handleSearch} />
