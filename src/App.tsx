@@ -15,7 +15,7 @@ const App = () => {
   let [data, setData] = useState(null)
   let [message, setMessage] = useState('Search for Music!')
 
-  const handleSearch = (e, term) => {
+  const handleSearch = (e: { preventDefault: () => void; }, term: any) => {
     e.preventDefault()
     setData(fetchData(term, 'main'))
   }
